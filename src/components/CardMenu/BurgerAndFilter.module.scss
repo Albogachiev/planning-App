@@ -1,0 +1,61 @@
+.container {
+  padding: 10px;
+  background-color: rgb(227, 225, 225);
+  border-radius: 8px;
+  border: 1px solid gray;
+  z-index: 100;
+  width: 350px;
+  color: rgb(1, 10, 34);
+  position: absolute;
+  top: 50px;
+  right: -310px;
+  box-shadow: 4px 5px 8px 0px rgba(34, 60, 80, 0.2);
+  &_p_center {
+    user-select: none;
+    text-align: center;
+  }
+  > p {
+    cursor: pointer;
+    padding: 10px 6px;
+    margin: 10px 0px;
+    &:hover {
+      border-radius: 5px;
+      background-color: rgb(194, 194, 194);
+    }
+  }
+  > hr {
+    margin: 10px 0px;
+  }
+}
+
+@media (max-width: 1070px) {
+  .container {
+    width: 270px;
+    right: 13px;
+    font-size: 17px;
+    > p {
+      padding: 8px;
+      margin: 8px;
+    }
+  }
+}
+
+@media (max-width: 690px) {
+  .container {
+    padding: 5px;
+    width: 250px;
+    top: 45px;
+    right: 13px;
+    font-size: 14px;
+    > p {
+      padding: 5px;
+      margin: 5px;
+    }
+  }
+}
+
+.filterTasks {
+  color: red;
+  text-align: center;
+
+}
